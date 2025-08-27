@@ -1,15 +1,15 @@
 # HiFi4G Dataset
-The dataset of the paper "HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting".
+The dataset of the paper "Topology-Aware Optimization of Gaussian Primitives for Human-Centric Volumetric Videos".
 
-## HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting
+## Topology-Aware Optimization of Gaussian Primitives for Human-Centric Volumetric Videos
 
-**[Yuheng Jiang](https://nowheretrix.github.io/), [Zhehao Shen](https://github.com/moqiyinlun), [Penghao Wang](https://authoritywang.github.io/), Zhuo Su, [Yu Hong](https://github.com/xyi1023), [Yingliang Zhang](https://cn.linkedin.com/in/yingliangzhang), [Jingyi Yu](http://www.yu-jingyi.com/), [Lan Xu](http://xu-lan.com/).** 
+**[Yuheng Jiang](https://nowheretrix.github.io/), [Chengcheng Guo](https://github.com/gcccccccccccc12345), [Yize Wu](https://github.com/wuyize25), [Yu Hong](https://github.com/xyi1023), [Shengkun Zhu](https://github.com/zsk0219), [Zhehao Shen](https://github.com/moqiyinlun), [Yingliang Zhang](https://cn.linkedin.com/in/yingliangzhang), Shaohui Jiao, Zhuo Su, [Lan Xu](http://xu-lan.com/), [Marc Habermann](https://people.mpi-inf.mpg.de/~mhaberma/), [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/).** 
 
 *CVPR 2024*
 
 [[Project Page]](https://nowheretrix.github.io/HiFi4G/) [[Paper Link]](https://arxiv.org/abs/2312.03461) [[Dataset Link]](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/Eo47XO8GfxpPryq4LeZB-p8B28-jtGhuKq1FL5KUrAEyKw?e=x6ruk6)
 
-![dataset_description](./imgs/gallery.png)
+![dataset_description](./imgs/dataset.jpg)
 
 ### Description
 
@@ -31,7 +31,7 @@ The overall file structure is as follows:
 ```
 ### Download our dataset
 The dataset is publicly accessible at [Link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/Eo47XO8GfxpPryq4LeZB-p8B28-jtGhuKq1FL5KUrAEyKw?e=x6ruk6). It is authorized for non-commercial use only. For commercial use, please contact Yuheng Jiang (jiangyh2@shanghaitech.edu.cn) and cc Lan Xu(xulan1@shanghaitech.edu.cn) to obtain necessary permissions.
-### Citation
+<!-- ### Citation
 
 If you use this dataset for your research, please cite our paper:
 
@@ -44,7 +44,7 @@ If you use this dataset for your research, please cite our paper:
  year = {2024}, 
  pages = {19734-19745} 
  }
-```
+``` -->
 
 
 
