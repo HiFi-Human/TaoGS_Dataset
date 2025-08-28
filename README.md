@@ -17,12 +17,12 @@ The dataset of the paper "Topology-Aware Optimization of Gaussian Primitives for
 We have currently uploaded 7 sample cases of data with different people and diverse motions. 
 
 ### Setup
-To extract videos from the dataset into a standard data format, first clone[BackgroundMattingV2](https://github.com/PeterL1n/BackgroundMattingV2) and download the pre-trained model [pytorch_resnet50.pth](https://github.com/PeterL1n/BackgroundMattingV2/releases/download/v1.0.0/pytorch_resnet50.pth)
+To extract videos from the dataset into a standard data format, first clone [BackgroundMattingV2](https://github.com/PeterL1n/BackgroundMattingV2) and download the pre-trained model [pytorch_resnet50.pth](https://github.com/PeterL1n/BackgroundMattingV2/releases/download/v1.0.0/pytorch_resnet50.pth)
 
 ```
 git clone https://github.com/PeterL1n/BackgroundMattingV2
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
-pip install pycolmap
+pip install -r requirements.txt
 ```
 Use `process_dataset.py` to extract frames, perform matting, and apply undistortion to the data:
 ```
