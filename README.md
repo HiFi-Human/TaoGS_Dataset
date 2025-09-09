@@ -3,7 +3,7 @@ The dataset of the paper "Topology-Aware Optimization of Gaussian Primitives for
 
 ## Topology-Aware Optimization of Gaussian Primitives for Human-Centric Volumetric Videos
 
-**[Yuheng Jiang](https://nowheretrix.github.io/), [Chengcheng Guo](https://github.com/gcccccccccccc12345), [Yize Wu](https://github.com/wuyize25), [Yu Hong](https://github.com/xyi1023), [Shengkun Zhu](https://github.com/zsk0219), [Zhehao Shen](https://github.com/moqiyinlun), [Yingliang Zhang](https://cn.linkedin.com/in/yingliangzhang), Shaohui Jiao, Zhuo Su, [Lan Xu](http://xu-lan.com/), [Marc Habermann](https://people.mpi-inf.mpg.de/~mhaberma/), [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/).** 
+**[Yuheng Jiang](https://nowheretrix.github.io/), [Chengcheng Guo](https://github.com/gcccccccccccc12345), [Yize Wu](https://github.com/wuyize25), [Yu Hong](https://github.com/xyi1023), [Shengkun Zhu](https://github.com/zsk0219), [Zhehao Shen](https://github.com/moqiyinlun), [Yingliang Zhang](https://cn.linkedin.com/in/yingliangzhang), [Shaohui Jiao](https://cn.linkedin.com/in/shaohui-jiao-3b563826), [Zhuo Su](https://suzhuo.github.io/), [Lan Xu](http://xu-lan.com/), [Marc Habermann](https://people.mpi-inf.mpg.de/~mhaberma/), [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/).** 
 
 *SIGGRAPH Asia 2025*
 
@@ -11,6 +11,9 @@ The dataset of the paper "Topology-Aware Optimization of Gaussian Primitives for
 
 ![dataset_description](./imgs/dataset.jpg)
 
+### TODO
+- ✅ Release raw dataset
+- ⬜ Release data processing scripts
 
 ### Description
 
@@ -24,12 +27,12 @@ git clone https://github.com/PeterL1n/BackgroundMattingV2
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
-Use `process_dataset.py` to extract frames, perform matting, and apply undistortion to the data:
+<!-- Use `process_dataset.py` to extract frames, perform matting, and apply undistortion to the data:
 ```
-CUDA_VISIBLE_DEVICES=2 python process_dataset.py --num 81 --start 0 --end 5 --data_path /data/new_disk7/dataset/release/4K_Actor1_Magic_1 --bg /data/new_disk7/dataset/release/4K_Actor1_Magic_1/bg --cali /data/new_disk7/dataset/release/4K_Actor1_Magic_1/sparse/0
-```
+python process_dataset.py --num 81 --start 0 --end 5 --data_path /data/new_disk7/dataset/release/4K_Actor1_Magic_1 --bg /data/new_disk7/dataset/release/4K_Actor1_Magic_1/bg --cali /data/new_disk7/dataset/release/4K_Actor1_Magic_1/sparse/0
+``` -->
 
-The overall file structure is as follows:
+The overall file structure after processing is as follows:
 ```
 ├── image_white
 │    ├── %d                - The frame number, starts from 0.
@@ -46,20 +49,3 @@ To run algorithms on single-frame data, you need to move the calibration files. 
 
 ### Download our dataset
 The dataset is publicly accessible at [Link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1). It is authorized for non-commercial use only. For commercial use, please contact Yuheng Jiang (jiangyh2@shanghaitech.edu.cn) and cc Lan Xu(xulan1@shanghaitech.edu.cn) to obtain necessary permissions.
-<!-- ### Citation
-
-If you use this dataset for your research, please cite our paper:
-
-```
-@InProceedings{Jiang_2024_CVPR,
- author = {Jiang, Yuheng and Shen, Zhehao and Wang, Penghao and Su, Zhuo and Hong, Yu and Zhang, Yingliang and Yu, Jingyi and Xu, Lan}, 
- title = {HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting}, 
- booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
- month = {June}, 
- year = {2024}, 
- pages = {19734-19745} 
- }
-``` -->
-
-
-
