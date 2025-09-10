@@ -7,7 +7,7 @@ The dataset of the paper "Topology-Aware Optimization of Gaussian Primitives for
 
 *SIGGRAPH Asia 2025*
 
-[[Project Page]](xxx) [[Paper Link]](xxxx) [[Dataset Link]](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1)
+[[Project Page]](https://guochch.github.io/TaoGS/) [[Paper Link]](https://arxiv.org/abs/2509.07653) [[Dataset Link]](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1)
 
 ![dataset_description](./imgs/dataset.jpg)
 
