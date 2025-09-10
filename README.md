@@ -49,3 +49,17 @@ To run algorithms on single-frame data, you need to move the calibration files. 
 
 ### Download our dataset
 The dataset is publicly accessible at [Link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1). It is authorized for non-commercial use only. For commercial use, please contact Yuheng Jiang (jiangyh2@shanghaitech.edu.cn) and cc Lan Xu(xulan1@shanghaitech.edu.cn) to obtain necessary permissions.
+
+## Citation
+If you find this work useful for your research, please cite us using the following BibTeX entry.
+```
+@misc{jiang2025topology,
+    title={Topology-Aware Optimization of Gaussian Primitives for Human-Centric Volumetric Videos}, 
+    author={Yuheng Jiang and Chengcheng Guo and Yize Wu and Yu Hong and Shengkun Zhu and Zhehao Shen and Yingliang Zhang and Shaohui Jiao and Zhuo Su and Lan Xu and Marc Habermann and Christian Theobalt},
+    year={2025},
+    eprint={2509.07653},
+    archivePrefix={arXiv},
+    primaryClass={cs.GR},
+    url={https://arxiv.org/abs/2509.07653}, 
+}
+```
