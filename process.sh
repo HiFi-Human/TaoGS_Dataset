@@ -1,9 +1,9 @@
 #!/bin/bash
 
-START=130
-END=134
-RESOLUTION=1
-DATA_PATH="/data/new_disk7/dataset/4K_Actor1_Magic_1"
+START=0
+END=99999 # to the last frame
+RESOLUTION=1 
+DATA_PATH="dataset/4K_Actor1_Magic_1" # path to your dataset
 
 echo "Running extract_videos.py..."
 python scripts/extract_videos.py --start $START --end $END --resolution $RESOLUTION --data_path $DATA_PATH
