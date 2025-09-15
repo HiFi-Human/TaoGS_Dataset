@@ -26,9 +26,6 @@ def extract_video(videoname, path, start, end, ext, step, scale=1):
     
     video.set(cv2.CAP_PROP_POS_FRAMES, start)
     for cnt in tqdm(range(start, totalFrames), desc='{:10s}'.format(os.path.basename(videoname))):
-        # if cnt < start:
-        #     video.read()
-        #     continue
         if cnt >= end:break
         ret, frame = video.read()
         if not ret:continue
@@ -44,18 +41,12 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('path', type=str, help="the path of data")
-    parser.add_argument('--output_path', type=str, default=None)
     parser.add_argument('--ext', type=str, default='png', choices=['jpg', 'png'], help="image file extension")
-    parser.add_argument('--start', type=int, default=0,
-        help='frame start')
-    parser.add_argument('--end', type=int, default=10000,   
-        help='frame end')    
-    parser.add_argument('--step', type=int, default=1,
-        help='frame step')
-    parser.add_argument('--scale', type=int, default=1, help='frame start')
-    # parser.add_argument('--output_path', type=str, help="the path 2123 data")
+    parser.add_argument('--start', type=int, default=0, help='frame start')
+    parser.add_argument('--end', type=int, default=101, help='frame end')    
+    parser.add_argument('--step', type=int, default=1, help='frame step')
+    parser.add_argument('--scale', type=int, default=1, help='resolution scale')
     parser.add_argument('--debug', action='store_true')
-    parser.add_argument('--path_origin', default=os.getcwd())
     args = parser.parse_args()
 
     if os.path.exists(args.path):
@@ -68,6 +59,5 @@ if __name__ == "__main__":
         for video in videos:
             basename = extract_video(video, video_dir, start=args.start, end=args.end, ext=args.ext, step=args.step, scale=args.scale)
             subs.append(basename)
-        print('cameras: ', ' '.join(subs))
     else:
         print(args.path, ' does not exist')
