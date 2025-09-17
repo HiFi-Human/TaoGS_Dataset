@@ -46,7 +46,7 @@ To run algorithms on **single-frame** data, you need to move the calibration fil
 **Note on 3D Points**: Since we used separately captured calibration data for camera calibration, the points3D.bin file in `sparse/0` does not contain the point cloud of the actual scene. Therefore, we provide the sparse point cloud from the first frame of each sequence (reconstructed by 3D Gaussian Splatting) in the `first_frame_pcds` folder. A compressed archive of these point clouds is also available in the dataset download [link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1).
 
 ### Download our dataset
-The dataset is publicly accessible at [Link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1). It is authorized for **non-commercial** use only. For commercial use, please contact Yuheng Jiang (jiangyh2@shanghaitech.edu.cn) and cc Lan Xu(xulan1@shanghaitech.edu.cn) to obtain necessary permissions.
+The dataset is publicly accessible at [Link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1). It is authorized for **non-commercial** use only. For commercial use, please contact Yuheng Jiang (nowheretrix123@gmail.com) and cc Chengcheng Guo(guochch2024@shanghaitech.edu.cn) to obtain necessary permissions.
 
 ## Citation
 If you find this work useful for your research, please cite us using the following BibTeX entry.
