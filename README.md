@@ -7,7 +7,7 @@ The dataset of the paper "Topology-Aware Optimization of Gaussian Primitives for
 
 *SIGGRAPH Asia 2025*
 
-[[Project Page]](https://guochch.github.io/TaoGS/) [[Paper Link]](https://arxiv.org/abs/2509.07653) [[Dataset Link]](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1)
+[[Project Page]](https://guochch.github.io/TaoGS/) [[Paper Link]](https://arxiv.org/abs/2509.07653) [[Dataset Link]](https://huggingface.co/datasets/moqiyinlun1/HiFiHuman/tree/main/TaoGS_Dataset)
 
 ![dataset_description](./imgs/dataset.jpg)
 
@@ -43,7 +43,7 @@ The overall file structure after processing is as follows:
 
 To run algorithms on **single-frame** data, you need to move the calibration files. For `image_white` under [instant-ngp](https://github.com/NVlabs/instant-ngp) format, rename the frame folder to `images` and move `transforms.json` to the same directory as `images`. For `image_white_undistortion` in colmap format, rename the frame folder to `images` and move the `sparse/0` in `image_white_undistortion/colmap` folder to the same directory as `images`.
 
-**Note on 3D Points**: Since we used separately captured calibration data for camera calibration, the points3D.bin file in `sparse/0` does not contain the point cloud of the actual scene. Therefore, we provide the sparse point cloud from the first frame of each sequence (reconstructed by 3D Gaussian Splatting) in the `first_frame_pcds` folder. A compressed archive of these point clouds is also available in the dataset download [link](https://cvrmkura-my.sharepoint.com/:f:/g/personal/sdjnes_cvrmkura_onmicrosoft_com/EkLQzzmfMM5EhWfKBUzPjrwB1Q98SlBha4gRV7lHLUcU-Q?e=dPiBQ1).
+**Note on 3D Points**: Since we used separately captured calibration data for camera calibration, the points3D.bin file in `sparse/0` does not contain the point cloud of the actual scene. Therefore, we provide the sparse point cloud from the first frame of each sequence (reconstructed by 3D Gaussian Splatting) in the `first_frame_pcds` folder. A compressed archive of these point clouds is also available in the dataset download [link](https://huggingface.co/datasets/moqiyinlun1/HiFiHuman/tree/main/TaoGS_Dataset/first_frame_pcds).
 
 ### Download our dataset
 The dataset is publicly accessible at [Link](https://huggingface.co/datasets/moqiyinlun1/HiFiHuman/tree/main/TaoGS_Dataset). It is authorized for **non-commercial** use only. For commercial use, please contact Yuheng Jiang (nowheretrix123@gmail.com) and cc Chengcheng Guo(guochch2024@shanghaitech.edu.cn) to obtain necessary permissions.
